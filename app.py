@@ -4,26 +4,28 @@ import streamlit as st
 st.set_page_config(page_title="Meu Cartão", page_icon="💗", layout="centered")
 
 # Título e Foto / Banner
-st.title("Olá! Eu sou a Yas :) 💗")
-st.image("imagem.jpg", width=150) # Suba sua foto ou link de imagem
+st.title("presentinho pro melhor namorado do mundo!!")
+st.image("https://pin.it/1sCQ3iWo0", width=150) # Suba sua foto ou link de imagem
 
-st.subheader("Estudante de engenharia da computação")
-st.write("Conecte-se comigo ou mande uma mensagem abaixo:")
+st.subheader("José, eu amo você!")
+st.write("Ainda não consigo fazer o presente que você merece, mas espero que ache esse fofo 💘")
 
 # Botões de Redes Sociais
-col1, col2 = st.columns(2)
+col1, col2, col3 = st.columns(3)
 with col1:
-    st.link_button("📂 Meu GitHub", "https://github.com/yasmimtaveira")
+    st.link_button("🎼 Uma música!", "https://youtu.be/P-wyIzdAnvc?si=qUJrmFUjXehOlc0j")
 with col2:
-    st.link_button("💼 LinkedIn", "www.linkedin.com/in/yasmim-taveira-lopes-40a9b335b")
+    st.link_button("💞 A gente <3", "https://www.instagram.com/stories/highlights/17978243759574763/?hl=en")
+with col3:
+    st.image("beijo.png", width= 100)
 
 st.divider()
 
 # Exemplo de Interatividade: Formulário de Mensagem / RSVP
-with st.form("contato"):
+with st.form("Dê uma nota para essa declaração:"):
     nome = st.text_input("Seu nome: ")
     mensagem = st.text_area("Sua mensagem: ")
-    enviar = st.form_submit_button("Enviar Mensagem")
+    enviar = st.form_submit_button("Enviar 😽")
     
     if enviar:
-        st.success(f"Obrigado, {nome}! Sua mensagem foi recebida.")
+        st.success(f"Obrigada, Amor! Sua mensagem foi enviada.")
