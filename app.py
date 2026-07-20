@@ -4,8 +4,8 @@ import streamlit as st
 st.set_page_config(page_title="Meu Cartão", page_icon="💗", layout="centered")
 
 # Título e Foto / Banner
-st.title("Olá! Eu sou a Yas")
-st.image("https://www.sciencefriday.com/segments/jwst-discoveries-galaxy-formation/", width=150) # Suba sua foto ou link de imagem
+st.title("Olá! Eu sou a Yas :) 💗")
+st.image("imagem.jpg", width=150) # Suba sua foto ou link de imagem
 
 st.subheader("Estudante de engenharia da computação")
 st.write("Conecte-se comigo ou mande uma mensagem abaixo:")
