@@ -5,7 +5,11 @@ st.set_page_config(page_title="Meu Cartão", page_icon="💗", layout="centered"
 
 # Título e Foto / Banner
 st.title("presentinho pro melhor namorado do mundo!!")
-st.image("snoopy.jpg", width=300) # Suba sua foto ou link de imagem
+
+p1, p2, p3 = st.columns(3)
+
+with p2:
+    st.image("snoopy.jpg", width=300) # Suba sua foto ou link de imagem
 
 st.subheader("José, eu amo você!")
 st.write("Ainda não consigo fazer o presente que você merece, mas espero que ache esse fofo 💘")
