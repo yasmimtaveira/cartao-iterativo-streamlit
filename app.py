@@ -5,7 +5,7 @@ st.set_page_config(page_title="Meu Cartão", page_icon="💗", layout="centered"
 
 # Título e Foto / Banner
 st.title("presentinho pro melhor namorado do mundo!!")
-st.image("https://pin.it/1sCQ3iWo0", width=150) # Suba sua foto ou link de imagem
+st.image("snoopy.jpg", width=300) # Suba sua foto ou link de imagem
 
 st.subheader("José, eu amo você!")
 st.write("Ainda não consigo fazer o presente que você merece, mas espero que ache esse fofo 💘")
@@ -22,6 +22,7 @@ with col3:
 st.divider()
 
 # Exemplo de Interatividade: Formulário de Mensagem / RSVP
+st.write("Dê uma nota para essa declaração:")
 with st.form("Dê uma nota para essa declaração:"):
     nome = st.text_input("Seu nome: ")
     mensagem = st.text_area("Sua mensagem: ")
